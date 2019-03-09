@@ -1,0 +1,75 @@
+body
+{
+  background-color: #87CEFA;
+}
+
+
+.page {
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 10px 50px 50px 50px;
+}
+
+.page h1{
+  font-family:calibri;
+  background-color: #00008B;
+  font-size: 60px;
+  text-align: center;
+  color: #fff;
+  padding: 2px 0px;
+}
+
+.page h3{
+  font-family:calibri;
+  font-size: 30px;
+  color: #1E90FF;
+  padding: 2px 0px;
+}
+
+textarea{
+  width: 950px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons{
+  margin-top: 50px;
+  position: relative;
+}
+
+#btn0, #btn1, #btn2{
+  background-color: #00008B;
+  width: 250px;
+  font-size: 20px;
+  color: #fff;
+  border: 1px aolid #1d3c6a;
+  margin: 10px 40px 10px 0px;
+  padding: 10px 10px;
+}
+
+#btn0:hover, #btn1:hover, #btn2:hover{
+  cursor: pointer;
+  background-color: #0000CD;
+}
+
+.bottom{
+    margin: 0 auto;
+    width: 1000px;
+    height: 250px;
+    background-color: #00BFFF;
+    padding: 10px 50px 50px 50px;
+}
+
+.bottom a{
+    color: #fff;
+    font-size: 30px;
+}
+
+.bottom a:hover{
+    curser: pointer;
+    color: #1E90FF;
+}
