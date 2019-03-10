@@ -21,6 +21,15 @@ body
   padding: 2px 0px;
 }
 
+.page h2{
+  font-family:calibri;
+  background-color: #00008B;
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  padding: 2px 0px;
+}
+
 .page h3{
   font-family:calibri;
   font-size: 30px;
