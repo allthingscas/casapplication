@@ -5,7 +5,7 @@ function Proposal(questions){
 }
 
 Proposal.prototype.getQuestion = function() {
-  return.this.questions[this.questionIndex];
+  return this.questions[this.questionIndex];
 }
 
 Proposal.prototype.isEnded = function() {
