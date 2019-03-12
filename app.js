@@ -14,6 +14,7 @@ var Proposalquestions = [
 //making vars for buttons
 var nextb = document.getElementById("btn1");
 var backb = document.getElementById("btn0");
+var homeb = document.getElementById("btn2");
 
 function initialize() {
   //makes new proposal
@@ -23,10 +24,22 @@ function initialize() {
   element.innerHTML = proposal.getQuestion().text;
   
   nextb.onclick = function() {
-    if (proposa.isEnded()){
+    if (proposal.isEnded()){
       proposal.getQuestion().answered = true;
       proposal.getQuestion().storeAnswer(area.value);
       endProposal(proposal);
     }
   }
+  
+  backb.onclick = function() {
+    if (proposal.questionIndex > 0){
+
+    }  
+  }  
+  
+  function endProposal(x)
+  {
+    
+  } 
+  
 }
