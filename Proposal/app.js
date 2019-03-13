@@ -23,6 +23,10 @@ function initialize() {
   //replaces Question space with next question
   element.innerHTML = proposal.getQuestion().text;
   
+  homeb.onclick = function(){
+     window.location.href = "index.html";
+  }  
+  
   nextb.onclick = function() {
     if (proposal.isEnded()){
       proposal.getQuestion().answered = true;
