@@ -50,7 +50,7 @@ textarea{
   position: relative;
 }
 
-#btn0, #btn1, #btn2{
+#btn0, #btn1, #btn2, #btn3, #btn4, #btn5, #btn6, #btn7, #btn8{
   background-color: #00008B;
   width: 250px;
   font-size: 20px;
@@ -60,7 +60,7 @@ textarea{
   padding: 10px 10px;
 }
 
-#btn0:hover, #btn1:hover, #btn2:hover{
+#btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover, #btn5:hover, #btn6:hover, #btn7:hover, #btn8:hover{
   cursor: pointer;
   background-color: #0000CD;
 }
