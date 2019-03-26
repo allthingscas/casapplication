@@ -24,7 +24,7 @@ function initialize() {
   element.innerHTML = proposal.getQuestion().text;
   
   homeb.onclick = function(){
-     window.location.href = "index.html";
+     window.location.href = "../index.html";
   }  
   
   nextb.onclick = function() {
