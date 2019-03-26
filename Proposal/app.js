@@ -9,7 +9,7 @@ new Question("7.	Determine the steps necessary to accomplish your goals and give
 new Question("8.	Determine where you can go for assistance, advice, and information.  (people or resources)"),
 new Question("9.	Who will supervise this CAS experience?  (review guidelines if necessary)"),
 new Question("10.	Are there any risks involved with this experience?  Explain"),
-new Question"11.	How will you document your project?  (journals, spreadsheets, photos, videos, feedback from others, etc.)")];
+new Question("11.	How will you document your project?  (journals, spreadsheets, photos, videos, feedback from others, etc.)")];
 
 //making vars for buttons
 var nextb = document.getElementById("btn1");
@@ -33,17 +33,89 @@ function initialize() {
       proposal.getQuestion().storeAnswer(area.value);
       endProposal(proposal);
     }
+    else{
+      proposal.getQuestion().answered = true;
+      proposal.getQuestion().storeAnswer(area.value);
+      proposal.questionIndex++;
+      element.innerHTML = proposal.getQuestion().text;
+      area = document.getElementById("answerArea");
+      if(proposal.getQuestion().answered === false)
+      {
+        area.innerHTML = "Type your answer here...";
+      }
+      else {
+        area.innerHTML = proposal.getQuestion().answer;
+      }
+    }
   }
   
   backb.onclick = function() {
-    if (proposal.questionIndex > 0){
-
-    }  
+    if(proposal.questionIndex > 0)
+    {
+      proposal.questionIndex--;
+      element.innerHTML = proposal.getQuestion().text;
+      area.innerHTML = proposal.getQuestion().Answer();
+    }
+    else {
+      window.location.href = "../index.html";
+    }
+  }
   }  
   
   function endProposal(x)
   {
+  area = document.getElementById("answerArea");
+  var buttonArea = document.getElementById("navigation");
+  buttonArea.innerHTML = "<button id=\"btn3\">Go to ManageBac</span></button>"+
+  "<button id=\"btn4\">Go to Gmail</span></button>"+
+    "<button id=\"btn8\">Go to Google Docs</span></button>"+
+  "<button id=\"btn5\">Make another Proposal</span></button>"+
+  "<button id=\"btn6\">Go to Main Menu</span></button>"+
+  "<button id=\"btn7\">Copy to Clipboard</span></button>";
+
+  var element = document.getElementById("Question");
+  element.innerHTML = "This is your final propsoal.\n Use the buttons below to go to ManageBack or the Main Menu.\n"
+  + "Refresh the page to start another proposal. Remember to copy your reflection before leaving the page.";
+
+  var area = document.getElementById("answerArea");
+  area.innerHTML = x.buildAnswer();
+
+  var MBut = document.getElementById("btn3");
+  var GBut = document.getElementById("btn4");
+  var SOBut = document.getElementById("btn5");
+  var mainBut = document.getElementById("btn6");
+  var clipBut = document.getElementById("btn7");
+  var GDBut = document.getElementById("btn8");
+
+
+  MBut.onclick = function(){
+    window.open("https://stonypoint.managebac.com/login");
+    window.focus();
+  }
     
+  GBut.onclick = function(){
+    window.open("https://mail.google.com/mail/ca/u/0/#inbox");
+    window.focus();
+  } 
+
+  mainBut.onclick = function() {
+    window.location.href = "../index.html";
+  }
+
+  SOBut.onclick = function() {
+    window.location.href = "Proposal/proPage.html";
+  }
+    
+  clipBut.onclick = function() {
+    var area = document.getElementById("answerArea");
+    area.select();
+    document.execCommand("copy");
+  }
+    
+  GDBut.onclick = function() {
+    window.open("https://drive.google.com/drive/my-drive");
+    window.focus();
+  }   
   } 
   
 }
