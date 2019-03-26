@@ -66,12 +66,12 @@ function initialize() {
   {
   area = document.getElementById("answerArea");
   var buttonArea = document.getElementById("navigation");
-  buttonArea.innerHTML = "<button id=\"btn3\">Go to ManageBac</span></button>"+
-  "<button id=\"btn4\">Go to Gmail</span></button>"+
-    "<button id=\"btn8\">Go to Google Docs</span></button>"+
-  "<button id=\"btn5\">Make another Proposal</span></button>"+
-  "<button id=\"btn6\">Go to Main Menu</span></button>"+
-  "<button id=\"btn7\">Copy to Clipboard</span></button>";
+  buttonArea.innerHTML = "<button id=\"btn3\">Go to ManageBac</button>"+
+  "<button id=\"btn4\">Go to Gmail</button>"+
+    "<button id=\"btn8\">Go to Google Docs</button>"+
+  "<button id=\"btn5\">Make another Proposal</button>"+
+  "<button id=\"btn6\">Go to Main Menu</button>"+
+  "<button id=\"btn7\">Copy to Clipboard</button>";
 
   var element = document.getElementById("Question");
   element.innerHTML = "This is your final propsoal.\n Use the buttons below to go to ManageBack or the Main Menu.\n"
