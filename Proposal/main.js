@@ -71,7 +71,7 @@ function newProposal() {
   {
   document.getElementById("box").innerHTML = "<textarea id=\"answerArea\" placeholder=\"Type your answer here...\"></textarea>";
   area = document.getElementById("answerArea");
-  var buttonArea = document.getElementById("navigation");
+  var buttonArea = document.getElementById("redirect");
   buttonArea.innerHTML = "<button id=\"btn3\">Go to ManageBac</button>"+
   "<button id=\"btn4\">Go to Gmail</button>"+
     "<button id=\"btn8\">Go to Google Docs</button>"+
