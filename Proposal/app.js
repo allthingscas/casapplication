@@ -117,5 +117,4 @@ function initialize() {
     window.focus();
   }   
   } 
-  
-}
+ 
