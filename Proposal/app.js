@@ -23,6 +23,9 @@ function initialize() {
   //replaces Question space with next question
   element.innerHTML = proposal.getQuestion().text;
   
+  var area = document.getElementByID("answerArea");
+  area.innerHTML = "Type your answer here..."
+  
   homeb.onclick = function(){
      window.location.href = "../index.html";
   }  
