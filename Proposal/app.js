@@ -1,5 +1,5 @@
 var Proposalquestions = [
-new Question("1. Give your CAS activity a descriptive title and date."),
+new Question("1.  Give your CAS activity a descriptive title and date."),
 new Question("2.	Describe your idea in detail, including your roles and responsibilities."),
 new Question("3.	Are you collaborating with anyone?  Please list their names."),
 new Question("4.	Is this experience Creativity, Activity, Service, or multiple?  Explain."),
