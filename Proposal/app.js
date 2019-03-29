@@ -24,7 +24,7 @@ function initialize() {
   element.innerHTML = proposal.getQuestion().text;
   
   var area = document.getElementById("answerArea");
-  area.innerHTML = "Type your answer here..."
+  area.placeholder = "Type your answer here...";
   
   homeb.onclick = function(){
      window.location.href = "../index.html";
