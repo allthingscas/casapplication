@@ -1,3 +1,4 @@
+//array of questions
 var Proposalquestions = [
 new Question("1.  Give your CAS activity a descriptive title and date."),
 new Question("2.	Describe your idea in detail, including your roles and responsibilities."),
@@ -16,7 +17,7 @@ var nextb = document.getElementById("btn1");
 var backb = document.getElementById("btn0");
 var homeb = document.getElementById("btn2");
 
-function initialize() {
+function newProposal() {
   //makes new proposal
   var proposal = new Proposal(Proposalquestions);
   var element = document.getElementById("Question");
@@ -68,7 +69,7 @@ function initialize() {
   
   function endProposal(x)
   {
-  document.getElementById("area").innerHTML = "<textarea id=\"answerArea\" placeholder=\"Type your answer here...\"></textarea>";
+  document.getElementById("box").innerHTML = "<textarea id=\"answerArea\" placeholder=\"Type your answer here...\"></textarea>";
   area = document.getElementById("answerArea");
   var buttonArea = document.getElementById("navigation");
   buttonArea.innerHTML = "<button id=\"btn3\">Go to ManageBac</button>"+
@@ -123,4 +124,4 @@ function initialize() {
   }   
   } 
  
-initialize();
+newProposal();
