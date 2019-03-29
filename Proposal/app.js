@@ -41,10 +41,11 @@ function initialize() {
       proposal.getQuestion().storeAnswer(area.value);
       proposal.questionIndex++;
       element.innerHTML = proposal.getQuestion().text;
+      document.getElementById("area").innerHTML = "<textarea id=\"answerArea\" placeholder=\"Type your answer here...\"></textarea>";
       area = document.getElementById("answerArea");
       if(proposal.getQuestion().answered === false)
       {
-        area.innerHTML = "Type your answer here...";
+        area.prototype = "Type your answer here...";
       }
       else {
         area.innerHTML = proposal.getQuestion().answer;
@@ -67,6 +68,7 @@ function initialize() {
   
   function endProposal(x)
   {
+  document.getElementById("area").innerHTML = "<textarea id=\"answerArea\" placeholder=\"Type your answer here...\"></textarea>";
   area = document.getElementById("answerArea");
   var buttonArea = document.getElementById("navigation");
   buttonArea.innerHTML = "<button id=\"btn3\">Go to ManageBac</button>"+
