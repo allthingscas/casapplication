@@ -9,7 +9,7 @@ new Question("7.	Determine the steps necessary to accomplish your goals and give
 new Question("8.	Determine where you can go for assistance, advice, and information.  (people or resources)"),
 new Question("9.	Who will supervise this CAS experience?  (review guidelines if necessary)"),
 new Question("10.	Are there any risks involved with this experience?  Explain"),
-new Question("11.	How will you document your project?  (journals, spreadsheets, photos, videos, feedback from others, etc.)")];
+new Question("11.	How will you document your project?  (journals, spreadsheets, photos, videos, feedback from others, etc.)")]
 
 //making vars for buttons
 var nextb = document.getElementById("btn1");
