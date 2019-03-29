@@ -23,7 +23,7 @@ function initialize() {
   //replaces Question space with next question
   element.innerHTML = proposal.getQuestion().text;
   
-  var area = document.getElementByID("answerArea");
+  var area = document.getElementById("answerArea");
   area.innerHTML = "Type your answer here..."
   
   homeb.onclick = function(){
