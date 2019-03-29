@@ -23,6 +23,6 @@ Proposal.prototype.buildAnswer = function() {
     endString += this.questions[i].text + " ";
     endString += this.questions[i].answer + " ";
   }
-}
-
+  
 return endString;
+}
