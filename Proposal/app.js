@@ -118,3 +118,4 @@ function initialize() {
   }   
   } 
  
+initialize();
