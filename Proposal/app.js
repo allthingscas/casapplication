@@ -106,7 +106,7 @@ function initialize() {
   }
 
   SOBut.onclick = function() {
-    window.location.href = "Proposal/proPage.html";
+    window.location.href = "proPage.html";
   }
     
   clipBut.onclick = function() {
