@@ -43,7 +43,7 @@ function newProposal() {
       proposal.getQuestion().storeAnswer(area.value);
       proposal.questionIndex++;
       element.innerHTML = proposal.getQuestion().text;
-      document.getElementById("area").innerHTML = "<textarea id=\"answerArea\" placeholder=\"Type your answer here...\"></textarea>";
+      document.getElementById("box").innerHTML = "<textarea id=\"answerArea\" placeholder=\"Type your answer here...\"></textarea>";
       area = document.getElementById("answerArea");
       if(proposal.getQuestion().answered === false)
       {
