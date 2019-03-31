@@ -1,5 +1,4 @@
 function Proposal(questions){
-  this.fulltext = "";
   this.questions = questions;
   this.questionIndex = 0;
 }
@@ -12,10 +11,6 @@ Proposal.prototype.isEnded = function() {
   return this.questions.length - 1 === this.questionIndex;
 }
 
-Proposal.prototype.addAnswer = function() {
-  this.fulltext += this.getQuestion + "\n" + answer;
-  return;
-}
 
 Proposal.prototype.buildAnswer = function() {
   var endString = "";
