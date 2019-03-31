@@ -1,6 +1,6 @@
 function Question(text) {
-  this.text = " " + text + " ";
-  this.answer = " ";
+  this.text = "" + text + "";
+  this.answer = "";
   this.answered = false;
  }
  
