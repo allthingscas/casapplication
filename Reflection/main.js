@@ -71,12 +71,12 @@ function newReflection() {
   buttonArea.innerHTML = "<button id=\"btn3\">Go to ManageBac</button>"+
   "<button id=\"btn4\">Go to Gmail</button>"+
     "<button id=\"btn8\">Go to Google Docs</button>"+
-  "<button id=\"btn5\">Make another Proposal</button>"+
+  "<button id=\"btn5\">Make another Reflection</button>"+
   "<button id=\"btn6\">Go to Main Menu</button>"+
   "<button id=\"btn7\">Copy to Clipboard</button>";
 
   var element = document.getElementById("Question");
-  element.innerHTML = "This is your completed proposal.\n Use the buttons below to renavigate.\n"
+  element.innerHTML = "This is your completed reflection.\n Use the buttons below to renavigate.\n"
   + "Don't forget to copy your work before leaving the page.";
 
   var area = document.getElementById("answerArea");
@@ -105,7 +105,7 @@ function newReflection() {
   }
 
   SOBut.onclick = function() {
-    window.location.href = "proPage.html";
+    window.location.href = "reflPage.html";
   }
     
   clipBut.onclick = function() {
