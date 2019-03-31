@@ -1,5 +1,5 @@
 function Proposal(questions){
-  this.fulltext = " ";
+  this.fulltext = "";
   this.questions = questions;
   this.questionIndex = 0;
 }
@@ -13,7 +13,7 @@ Proposal.prototype.isEnded = function() {
 }
 
 Proposal.prototype.addAnswer = function() {
-  this.fulltext += this.getQuestion + " " + answer;
+  this.fulltext += this.getQuestion + "\n" + answer;
   return;
 }
 
