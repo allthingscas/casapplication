@@ -81,8 +81,8 @@ function newProposal() {
   "<button id=\"btn7\">Copy to Clipboard</button>";
 
   var element = document.getElementById("Question");
-  element.innerHTML = "This is your final propsoal.\n Use the buttons below to go to ManageBack or the Main Menu.\n"
-  + "Refresh the page to start another proposal. Remember to copy your reflection before leaving the page.";
+  element.innerHTML = "This is your completed proposal.\n Use the buttons below to renavigate.\n"
+  + "Don't forget to copy your work before leaving the page.";
 
   var area = document.getElementById("answerArea");
   area.innerHTML = x.buildAnswer();
