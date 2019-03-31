@@ -18,7 +18,7 @@ Proposal.prototype.addAnswer = function() {
 }
 
 Proposal.prototype.buildAnswer = function() {
-  var endString = " ";
+  var endString = "";
   for (var i = 0; i < this.questions.length; i++){
     endString += this.questions[i].text + "\n";
     endString += this.questions[i].answer + "\n";
